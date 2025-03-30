@@ -1,0 +1,50 @@
+.add-book-rfid {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .add-book-rfid h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .add-book-rfid .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .add-book-rfid label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .add-book-rfid input,
+  .add-book-rfid textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .add-book-rfid .btn-submit {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-book-rfid .btn-submit:hover {
+    background-color: #218838;
+  }
+  
+  .message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+  }

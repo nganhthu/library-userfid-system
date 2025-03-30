@@ -1,0 +1,84 @@
+.member-list {
+  padding: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.member-list h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.member-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member-list th,
+.member-list td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.member-list th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #555;
+}
+
+.member-list tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.member-list tr:hover {
+  background-color: #f1f1f1;
+}
+.member-list .btn {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.member-list .btn-add {
+  background-color: #28a745;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.member-list .btn-add:hover {
+  background-color: #218838;
+}
+
+.member-list .btn-edit {
+  background-color: #ffc107;
+  color: black;
+}
+
+.member-list .btn-edit:hover {
+  background-color: #e0a800;
+}
+
+.member-list .btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.member-list .btn-delete:hover {
+  background-color: #c82333;
+}
+.member-list .btn-view {
+  background-color: #007bff;
+  color: white;
+}
+
+.member-list .btn-view:hover {
+  background-color: #0056b3;
+}
