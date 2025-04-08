@@ -55,6 +55,14 @@ const bookRoutes = require('./routes/bookRoutes');
 const attendanceRoutes = require('./routes/attendanceRoutes');
 const loanRoutes = require('./routes/loanRoutes');
 const userRoutes = require('./routes/userRoutes');
+const faceRecognitionRoutes = require('./routes/FaceRecognition');
+
+// Tạo các thư mục cần thiết nếu chưa tồn tại
+const fs = require('fs-extra');
+const path = require('path');
+fs.ensureDirSync(path.join(__dirname, 'public/uploads/faces'));
+fs.ensureDirSync(path.join(__dirname, 'public/uploads/attendance'));
+fs.ensureDirSync(path.join(__dirname, 'temp-uploads'));
 
 // Routes
 app.get('/', (req, res) => {
@@ -66,6 +74,7 @@ app.use('/api/books', bookRoutes);
 app.use('/api/attendance', attendanceRoutes);
 app.use('/api/loans', loanRoutes);
 app.use('/api/users', userRoutes);
+app.use('/api/face', faceRecognitionRoutes);
 
 // Định nghĩa port
 const PORT = process.env.PORT || 3000;
