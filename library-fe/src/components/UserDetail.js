@@ -11,7 +11,7 @@ function UserDetail() {
 
   useEffect(() => {
     // Gọi API để lấy thông tin chi tiết thành viên
-    fetch(`http://localhost:5000/api/users/${id}`)
+    fetch(`http://localhost:3001/api/users/${id}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch user details");

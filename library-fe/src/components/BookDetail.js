@@ -11,7 +11,7 @@ function BookDetail() {
 
   useEffect(() => {
     // Gọi API để lấy chi tiết sách
-    fetch(`http://localhost:5000/api/books/${id}`)
+    fetch(`http://localhost:3001/api/books/${id}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch book details");

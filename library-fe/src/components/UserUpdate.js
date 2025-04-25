@@ -18,7 +18,7 @@ function UserUpdate() {
 
   useEffect(() => {
     // Gọi API để lấy thông tin thành viên hiện tại
-    fetch(`http://localhost:5000/api/users/${id}`)
+    fetch(`http://localhost:3001/api/users/${id}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch user details");
@@ -46,7 +46,7 @@ function UserUpdate() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`http://localhost:5000/api/users/${id}`, {
+      const response = await fetch(`http://localhost:3001/api/users/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

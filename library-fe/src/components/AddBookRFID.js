@@ -28,7 +28,7 @@ function AddBookRFID() {
     e.preventDefault();
     try {
       // Gửi thông tin sách đến backend
-      const response = await fetch("http://localhost:5000/api/books", {
+      const response = await fetch("http://localhost:3001/api/books", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

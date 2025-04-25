@@ -9,7 +9,7 @@ function MemberList() {
   const navigate = useNavigate();
   useEffect(() => {
     // Gọi API để lấy danh sách thành viên
-    fetch("http://localhost:5000/api/users")
+    fetch("http://localhost:3001/api/users")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch members");
@@ -36,7 +36,7 @@ function MemberList() {
     const confirmDelete = window.confirm("Bạn có chắc chắn muốn xóa thành viên này?");
     if (confirmDelete) {
       try {
-        const response = await fetch(`http://localhost:5000/api/users/${id}`, {
+        const response = await fetch(`http://localhost:3001/api/users/${id}`, {
           method: "DELETE",
         });
 

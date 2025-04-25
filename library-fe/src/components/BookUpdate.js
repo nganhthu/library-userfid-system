@@ -21,7 +21,7 @@ function BookUpdate() {
 
   useEffect(() => {
     // Gọi API để lấy thông tin sách hiện tại
-    fetch(`http://localhost:5000/api/books/${id}`)
+    fetch(`http://localhost:3001/api/books/${id}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch book details");
@@ -46,7 +46,7 @@ function BookUpdate() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`http://localhost:5000/api/books/${id}`, {
+      const response = await fetch(`http://localhost:3001/api/books/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

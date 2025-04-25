@@ -8,7 +8,7 @@ function DeviceManagement() {
 
   useEffect(() => {
     // Gọi API để lấy danh sách thiết bị
-    fetch("http://localhost:5000/api/devices")
+    fetch("http://localhost:3001/api/devices")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch devices");
@@ -29,7 +29,7 @@ function DeviceManagement() {
     const confirmDelete = window.confirm("Bạn có chắc chắn muốn xóa thiết bị này?");
     if (confirmDelete) {
       try {
-        const response = await fetch(`http://localhost:5000/api/devices/${id}`, {
+        const response = await fetch(`http://localhost:3001/api/devices/${id}`, {
           method: "DELETE",
         });
 

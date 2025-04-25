@@ -12,7 +12,7 @@ function BookList() {
 
   useEffect(() => {
     // Gọi API để lấy danh sách sách
-    fetch("http://localhost:5000/api/books")
+    fetch("http://localhost:3001/api/books")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch books");
@@ -33,7 +33,7 @@ function BookList() {
     const confirmDelete = window.confirm("Bạn có chắc chắn muốn xóa sách này?");
     if (confirmDelete) {
       try {
-        const response = await fetch(`http://localhost:5000/api/books/${id}`, {
+        const response = await fetch(`http://localhost:3001/api/books/${id}`, {
           method: "DELETE",
         });
 
