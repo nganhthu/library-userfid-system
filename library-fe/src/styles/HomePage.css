@@ -1,0 +1,99 @@
+
+.home-page {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Màu nền dịu nhẹ */
+  }
+  
+  /* Banner */
+.banner {
+    background: linear-gradient(135deg, #86ce84, #9bc9b3);
+    color: #000; /* Chuyển toàn bộ chữ trong banner thành màu đen */
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif; /* Chuyển font chữ của banner */
+  }
+  
+  .banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #000; /* Chuyển chữ tiêu đề thành màu đen */
+    font-family: Arial, sans-serif; /* Chuyển font chữ của tiêu đề */
+  }
+  
+  .banner p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #000; /* Chuyển chữ mô tả thành màu đen */
+    font-family: Arial, sans-serif; /* Chuyển font chữ của mô tả */
+  }
+  
+  /* Thống kê */
+  .statistics {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+  
+  .stat-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stat-item h2 {
+    font-size: 2rem;
+    color: #054727;
+    margin-bottom: 10px;
+  }
+  
+  .stat-item p {
+    font-size: 1rem;
+    color: #5A4A42;
+  }
+  
+  /* Liên kết nhanh */
+  .quick-links {
+    margin-top: 30px;
+  }
+  
+  .quick-links h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .link-item {
+    background-color: #054727;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .link-item:hover {
+    background-color: #032d1a;
+    transform: translateY(-3px);
+  }

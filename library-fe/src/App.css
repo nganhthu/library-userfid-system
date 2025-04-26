@@ -1,0 +1,168 @@
+/* Reset CSS */
+body, h1, h2, p, a {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Màu nền tổng thể */
+body {
+  background-color: #edf0ee; /* Màu kem pastel dịu */
+  color: #5A4A42; /* Màu nâu nhẹ */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #86ce84; /* Màu pastel da */
+  padding: 12px 24px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 4px solid #9bc9b3; /* Viền nhẹ tạo hiệu ứng */
+  position: fixed; /* Giữ navbar cố định */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Đảm bảo navbar luôn ở trên cùng */
+}
+
+/* Thêm khoảng trống cho nội dung chính để không bị che bởi navbar */
+.container {
+  max-width: 1600px;
+  margin: 80px auto; /* Thêm khoảng cách để tránh navbar */
+  padding: 24px;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.navbar-logo h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #054727;
+}
+
+/* Navigation Links */
+.navbar-links {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #054727;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 6px 12px;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-links a:hover {
+  color: #054727;
+}
+
+.navbar-links a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background: #147a49;
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.navbar-links a:hover::after,
+.navbar-links a.active::after {
+  width: 100%;
+}
+
+/* Profile Icon */
+.navbar-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* Đảm bảo kích thước phù hợp */
+  height: 60px; /* Đảm bảo kích thước phù hợp */
+  border-radius: 50%; /* Bo tròn để tạo hình tròn */
+  overflow: hidden; /* Ẩn phần thừa nếu ảnh vượt quá kích thước */
+  background-color: #fff; /* Màu nền nếu ảnh không lấp đầy */
+  margin-left: auto; /* Đẩy profile về phía bên phải */
+  margin-right: 24px; /* Thêm khoảng cách giữa profile và cạnh phải */
+}
+
+.navbar-profile img {
+  width: 100%; /* Đảm bảo ảnh lấp đầy container */
+  height: 100%; /* Đảm bảo ảnh lấp đầy container */
+  object-fit: cover; /* Cắt ảnh để vừa khít container */
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar-profile img:hover {
+  transform: scale(1.1); /* Hiệu ứng phóng to khi hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+  }
+
+  .navbar-logo {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .navbar-links a {
+    font-size: 16px;
+    padding: 8px 0;
+  }
+
+  .navbar-profile {
+    width: 50px; /* Kích thước nhỏ hơn trên màn hình nhỏ */
+    height: 50px;
+  }
+
+  .navbar-profile img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo h2 {
+    font-size: 18px;
+  }
+
+  .navbar-links a {
+    font-size: 14px;
+  }
+
+  .navbar-profile img {
+    width: 50px;
+    height: 50px;
+  }
+}

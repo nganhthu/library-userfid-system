@@ -1,0 +1,43 @@
+/* Reset box model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Reset margins */
+  body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+    margin: 0;
+  }
+  
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: var(--font-family);
+    color: var(--text-color);
+  }
+  
+  /* Remove list styles on ul, ol elements */
+  ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  
+  /* Make images easier to work with */
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Inherit fonts for inputs and buttons */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
